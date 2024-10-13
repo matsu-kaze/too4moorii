@@ -1,1 +1,14 @@
 @use "sass:color";
+
+$img-pass: "../img/";
+//mixin
+$breakpoint: (
+  sp: "(max-width:767px)",
+  tab: "(min-width:768px)",
+  pc: "(min-width:1280px)",
+);
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
