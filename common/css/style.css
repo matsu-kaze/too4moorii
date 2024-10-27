@@ -1,3 +1,11 @@
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /*** The new CSS reset - version 1.11.1 (last updated 24.10.2023) ***/
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg*, symbol*)) {
   all: unset;
@@ -95,12 +103,8 @@ meter {
   box-sizing: border-box;
 }
 
-.l-button-sns {
-  display: flex;
-  gap: 10%;
-}
-.l-button-sns > li {
-  width: 100px;
+body {
+  background-color: #f4f4f9;
 }
 
 #l-home header {
@@ -112,37 +116,112 @@ meter {
 }
 #l-home header h1 {
   text-align: center;
-  color: #dbf7ff;
+  color: #f4f4f9;
 }
 #l-home header h1 + div > div {
   background-color: violet;
 }
+#l-home section {
+  text-align: center;
+}
+#l-home footer {
+  text-align: center;
+}
 
 .l-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  gap: 1.2rem;
 }
 @media (min-width:768px) {
   .l-gallery {
-    flex-direction: row;
+    gap: unset;
   }
 }
 @media (min-width:1280px) {
   .l-gallery {
-    flex-direction: row;
+    gap: unset;
   }
 }
 .l-gallery .l-gallery-item {
   margin: 10px;
-  flex-basis: 30%;
 }
 .l-gallery .l-gallery-item img {
   min-width: 100%;
   border-radius: 8px;
 }
 
+#l-topfooter ul {
+  padding-inline-start: unset;
+}
+
+@media (min-width:768px) {
+  .l-address {
+    max-width: 30%;
+    margin: auto;
+  }
+}
+@media (min-width:1280px) {
+  .l-address {
+    max-width: 30%;
+    margin: auto;
+  }
+}
+
+.l-button-sns {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
+@media (min-width:768px) {
+  .l-button-sns {
+    gap: 2rem;
+  }
+}
+@media (min-width:1280px) {
+  .l-button-sns {
+    gap: 2rem;
+  }
+}
+.l-button-sns > li {
+  width: 100px;
+}
+
 .c-inner {
   width: 80dvw;
   margin-inline: auto;
+}
+
+:where(.c-flex) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width:768px) {
+  :where(.c-flex) {
+    flex-direction: row;
+  }
+}
+@media (min-width:1280px) {
+  :where(.c-flex) {
+    flex-direction: row;
+  }
+}
+
+h2 {
+  margin-bottom: 0.83rem;
+}
+
+#l-home section {
+  padding: 60px 0;
+}
+#l-home footer {
+  padding: 10px 0;
+}
+
+.l-gallery-item {
+  flex-basis: 30%;
+}
+
+.l-address {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

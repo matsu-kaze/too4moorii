@@ -1,1 +1,22 @@
 @use "../00_global/" as v;
+
+h2 {
+  margin-bottom: 0.83rem;
+}
+
+#l-home {
+  section {
+    padding: 60px 0;
+  }
+  footer {
+    padding: 10px 0;
+  }
+}
+
+.l-gallery-item {
+  flex-basis: 30%;
+}
+
+.l-address {
+  margin-bottom: 30px;
+}

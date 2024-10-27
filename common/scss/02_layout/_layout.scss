@@ -1,12 +1,8 @@
 @use "../00_global/" as v;
 @use "sass:color";
 
-.l-button-sns {
-  display: flex;
-  gap: 10%;
-  > li {
-    width: 100px;
-  }
+body {
+  background-color: v.$white;
 }
 
 #l-home {
@@ -26,24 +22,59 @@
       }
     }
   }
+  section {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
 }
 
 .l-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  gap: 1.2rem;
   @include v.mq(tab) {
-    flex-direction: row;
+    gap: unset;
   }
   @include v.mq(pc) {
-    flex-direction: row;
+    gap: unset;
   }
   .l-gallery-item {
     margin: 10px;
-    flex-basis: 30%;
     img {
       min-width: 100%;
       border-radius: 8px;
     }
+  }
+}
+
+#l-topfooter {
+  ul {
+    padding-inline-start: unset;
+  }
+}
+
+.l-address {
+  @include v.mq(tab) {
+    max-width: 30%;
+    margin: auto;
+  }
+  @include v.mq(pc) {
+    max-width: 30%;
+    margin: auto;
+  }
+}
+
+.l-button-sns {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  @include v.mq(tab) {
+    gap: 2rem;
+  }
+  @include v.mq(pc) {
+    gap: 2rem;
+  }
+  > li {
+    width: 100px;
   }
 }

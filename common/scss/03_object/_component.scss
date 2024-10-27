@@ -5,3 +5,16 @@
   width: v.$max;
   margin-inline: auto;
 }
+
+:where(.c-flex) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include v.mq(tab) {
+    flex-direction: row;
+  }
+  @include v.mq(pc) {
+    flex-direction: row;
+  }
+}
