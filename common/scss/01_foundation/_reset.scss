@@ -14,6 +14,9 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
+body {
+  margin: 0;
+}
 a,
 button {
   cursor: revert;
@@ -33,6 +36,7 @@ table {
 }
 input,
 textarea {
+  user-select: auto;
   -webkit-user-select: auto;
 }
 textarea {
@@ -56,7 +60,9 @@ meter {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
+  line-break: after-white-space;
   -webkit-line-break: after-white-space;
+  user-select: auto;
   -webkit-user-select: auto;
 }
 :where([draggable="true"]) {

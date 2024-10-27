@@ -16,6 +16,10 @@ html {
   text-size-adjust: none;
 }
 
+body {
+  margin: 0;
+}
+
 a,
 button {
   cursor: revert;
@@ -39,6 +43,8 @@ table {
 
 input,
 textarea {
+  -moz-user-select: auto;
+       user-select: auto;
   -webkit-user-select: auto;
 }
 
@@ -73,7 +79,10 @@ meter {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
+  line-break: after-white-space;
   -webkit-line-break: after-white-space;
+  -moz-user-select: auto;
+       user-select: auto;
   -webkit-user-select: auto;
 }
 
@@ -84,4 +93,56 @@ meter {
 :where(dialog:modal) {
   all: revert;
   box-sizing: border-box;
+}
+
+.l-button-sns {
+  display: flex;
+  gap: 10%;
+}
+.l-button-sns > li {
+  width: 100px;
+}
+
+#l-home header {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #262626;
+}
+#l-home header h1 {
+  text-align: center;
+  color: #dbf7ff;
+}
+#l-home header h1 + div > div {
+  background-color: violet;
+}
+
+.l-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media (min-width:768px) {
+  .l-gallery {
+    flex-direction: row;
+  }
+}
+@media (min-width:1280px) {
+  .l-gallery {
+    flex-direction: row;
+  }
+}
+.l-gallery .l-gallery-item {
+  margin: 10px;
+  flex-basis: 30%;
+}
+.l-gallery .l-gallery-item img {
+  min-width: 100%;
+  border-radius: 8px;
+}
+
+.c-inner {
+  width: 80dvw;
+  margin-inline: auto;
 }/*# sourceMappingURL=style.css.map */

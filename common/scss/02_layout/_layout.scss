@@ -1,2 +1,49 @@
 @use "../00_global/" as v;
 @use "sass:color";
+
+.l-button-sns {
+  display: flex;
+  gap: 10%;
+  > li {
+    width: 100px;
+  }
+}
+
+#l-home {
+  header {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: v.$black;
+    h1 {
+      text-align: center;
+      color: v.$white;
+      + div {
+        > div {
+          background-color: violet;
+        }
+      }
+    }
+  }
+}
+
+.l-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  @include v.mq(tab) {
+    flex-direction: row;
+  }
+  @include v.mq(pc) {
+    flex-direction: row;
+  }
+  .l-gallery-item {
+    margin: 10px;
+    flex-basis: 30%;
+    img {
+      min-width: 100%;
+      border-radius: 8px;
+    }
+  }
+}

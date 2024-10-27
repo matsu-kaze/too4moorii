@@ -1,5 +1,9 @@
 @use "sass:color";
 
+$black: #262626;
+$white: #dbf7ff;
+
+$max: 80dvw;
 $img-pass: "../img/";
 //mixin
 $breakpoint: (
