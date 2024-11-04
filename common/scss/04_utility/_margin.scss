@@ -20,3 +20,46 @@ h2 {
 .l-address {
   margin-bottom: 30px;
 }
+
+#l-works {
+  header {
+    margin-top: 40px;
+  }
+  aside,
+  section,
+  .l-workshero-link {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .l-workshero {
+    + section {
+      margin-top: 40px;
+    }
+  }
+  .l-workshero-image {
+    margin-bottom: 10px;
+  }
+  .l-worksissue {
+    dl {
+      dt:not(:first-child) {
+        margin-top: 20px;
+      }
+      dd {
+        margin-top: 10px;
+      }
+    }
+  }
+  .l-worksinfo {
+    dl {
+      dt:not(:first-child) {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+  footer {
+    .l-works-nav {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
