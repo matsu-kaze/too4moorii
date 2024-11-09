@@ -260,8 +260,13 @@ body {
 }
 
 .c-inner {
-  width: 80dvw;
+  width: 60dvw;
   margin-inline: auto;
+}
+@media (max-width:767px) {
+  .c-inner {
+    width: 80dvw;
+  }
 }
 
 :where(.c-flex) {

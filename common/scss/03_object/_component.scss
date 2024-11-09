@@ -4,6 +4,9 @@
 .c-inner {
   width: v.$max;
   margin-inline: auto;
+  @include v.mq(sp){
+    width: v.$maxSp;
+  }
 }
 
 :where(.c-flex) {
