@@ -20,14 +20,13 @@
   </head>
   <!--
   head部分はインクルード
-　<!DOCTYPE html>
-　<html lang="en">
-  <script src="../../common/js/includehead.js"></script>
-  -->
+　<script src="../../common/js/includehead.js"></script>
   <script>
-    document.title = "作品詳細|すきまスペース不動産";
+    document.addEventListener("headLoaded", function () {
+      document.title = "作品詳細|すきまスペース不動産";
+    });
   </script>
-
+  -->
   <body id="l-works">
     <header class="l-workshead c-inner">
       <div>
@@ -38,8 +37,10 @@
     <!--headerもインクルードでやりたい
     下記はそれを見越したjsでの記述-->
     <script>
-      document.querySelector("header .l-worksh1").textContent =
-        "すきまスペース不動産";
+      document.addEventListener("headerLoaded", function () {
+        document.querySelector("header .l-worksh1").textContent =
+          "柴又スタンプラリー";
+      });
     </script>
     <aside class="l-workstag c-inner">
       <ul>

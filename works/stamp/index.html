@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <script src="../../common/js/includehead.js"></script>
+    <script src="../../common/js/includeHead.js"></script>
     <script>
       document.addEventListener("headLoaded", function () {
         document.title = "作品詳細|すきまスペース不動産";
@@ -10,7 +10,27 @@
   </head>
   <body id="l-works">
     <header id="header-placeholder"></header>
-    <script src="../../common/js/includeheader.js"></script>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("header .l-worksh1").textContent =
+          "柴又スタンプラリー";
+      });
+    </script>
+    <aside id="aside-placeholder"></aside>
+    <script src="../../common/js/includeAside.js"></script>
+    <!--上記scriptは開発用。本番アップで削除-->
+    <script>
+      const liItems = [
+        "架空",
+        "Web",
+        "HTML/CSS",
+        "PHP",
+        "JavaScript",
+        "DB",
+        "グラフィックデザイン",
+        "UI",
+      ];
+    </script>
     aaa
   </body>
 </html>

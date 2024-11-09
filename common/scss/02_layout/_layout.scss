@@ -99,6 +99,7 @@ body {
     > ul {
       display: flex;
       justify-content: flex-start;
+      flex-wrap: wrap;
       gap: 10px;
     }
   }

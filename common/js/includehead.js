@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    const response = await fetch("/common/template/head-w.html");
-    const headContent = await response.text();
+    const headResponse = await fetch("/common/template/head-w.html");
+    const headContent = await headResponse.text();
     document.head.innerHTML = headContent;
+
+    const headerResponse = await fetch("/common/template/header-w.html");
+    const headerContent = await headerResponse.text();
+    document.getElementById("header-placeholder").innerHTML = headerContent;
+
     document.dispatchEvent(new Event("headLoaded"));
   } catch (error) {
     console.error("Error fetching head:", error);
