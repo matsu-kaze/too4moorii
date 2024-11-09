@@ -348,7 +348,7 @@ h2 {
 #l-works .l-worksinfo dl dt:not(:first-child) {
   margin-top: 1.2rem;
 }
-#l-works footer .l-works-nav {
+#l-works .l-works-nav {
   margin-top: 40px;
   margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

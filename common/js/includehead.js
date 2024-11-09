@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     const headerContent = await headerResponse.text();
     document.getElementById("header-placeholder").innerHTML = headerContent;
 
+    const footerResponse = await fetch("/common/template/footer-w.html");
+    const footerContent = await footerResponse.text();
+    document.getElementById("footer-placeholder").innerHTML = footerContent;
+
     document.dispatchEvent(new Event("headLoaded"));
   } catch (error) {
     console.error("Error fetching head:", error);
