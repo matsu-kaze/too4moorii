@@ -51,7 +51,22 @@
         <li>UI</li>
       </ul>
     </aside>
-    <!--asideも配列でインクルードできるな-->
+    <!--
+    <aside id="aside-placeholder"></aside>
+    <script src="../../common/js/includeAside.js"></script>
+    ↑上記scriptは開発用。本番アップで削除
+    <script>
+      const liItems = [
+        "架空",
+        "Web",
+        "HTML/CSS",
+        "PHP",
+        "JavaScript",
+        "DB",
+        "グラフィックデザイン",
+        "UI",
+      ];
+    </script>-->
     <section id="works-detail" class="l-workshero c-inner">
       <div class="l-workshero-image">
         <img
@@ -211,5 +226,14 @@
         <p>&copy;Toshimori 2024</p>
       </div>
     </footer>
+    <!--
+    Next Projectボタンのhrefを書き換える
+     <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("footer .l-works-nav a").href =
+          "/portfolio/project3";
+      });
+    </script>
+    -->
   </body>
 </html>
