@@ -1,1 +1,11 @@
 @use "../00_global/" as v;
+
+.animate-on-scroll{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease-out;
+}
+.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
