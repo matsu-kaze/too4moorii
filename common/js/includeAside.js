@@ -1,6 +1,7 @@
 document.addEventListener("headLoaded", async function () {
   try {
-    const asideResponse = await fetch("/too4moorii/common/template/aside-w.html");
+    /*const asideResponse = await fetch("/too4moorii/common/template/aside-w.html");*/
+    const asideResponse = await fetch("/common/template/aside-w.html");
     const asideContent = await asideResponse.text();
     const asideElement = document.getElementById("aside-placeholder");
     asideElement.outerHTML = asideContent;
