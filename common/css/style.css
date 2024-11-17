@@ -168,6 +168,20 @@ body {
   text-align: center;
 }
 
+.l-profile {
+  display: flex;
+  gap: 2rem;
+}
+.l-profile .l-profile-img {
+  margin: auto;
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.l-profile .l-profile-txt > * {
+  margin-top: 2rem;
+}
+
 .l-gallery {
   gap: 1.2rem;
 }
@@ -243,7 +257,7 @@ body {
   gap: 10px;
 }
 #l-works .l-workshero-link {
-  text-align: center;
+  text-align: left;
 }
 #l-works .l-worksissue dl dt {
   border-bottom: solid 0.5px;
@@ -318,6 +332,17 @@ body {
 }
 .c-btn-close::after {
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.c-workswrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+@media (max-width:767px) {
+  .c-workswrap {
+    flex-wrap: wrap;
+  }
 }
 
 h2 {

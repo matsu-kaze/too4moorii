@@ -28,6 +28,23 @@ body {
   footer {
     text-align: center;
   }
+
+}
+
+.l-profile{
+  display: flex;
+  gap: 2rem;
+  .l-profile-img{
+    margin: auto;
+    max-width: 200px;
+    overflow: hidden;
+    border-radius:50%;
+  }
+  .l-profile-txt{
+    >*{
+      margin-top: 2rem;
+    }
+  }
 }
 
 .l-gallery {
@@ -104,7 +121,7 @@ body {
     }
   }
   .l-workshero-link {
-    text-align: center;
+    text-align: left;
   }
 
   .l-worksissue {

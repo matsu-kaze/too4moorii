@@ -46,3 +46,12 @@
     transform: translateY(-50%) rotate(-45deg);
   }
 }
+
+.c-workswrap{
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 2rem;
+  @include v.mq(sp){
+    flex-wrap:wrap;
+  }
+}
