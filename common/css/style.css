@@ -172,9 +172,15 @@ body {
   display: flex;
   gap: 2rem;
 }
+@media (max-width:767px) {
+  .l-profile {
+    flex-direction: column;
+  }
+}
 .l-profile .l-profile-img {
   margin: auto;
   max-width: 200px;
+  max-height: 200px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -242,6 +248,16 @@ body {
 #l-works .l-workshero-image img,
 #l-works .l-worksfeatures img {
   display: block;
+}
+#l-works .l-worksfeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width:767px) {
+  #l-works .l-worksfeatures {
+    grid-template-columns: 1fr;
+  }
 }
 #l-works header > div {
   display: flex;
@@ -326,12 +342,20 @@ body {
   height: 3px;
   top: 50%;
   background-color: #262626;
+  transition: 0.1s;
 }
 .c-btn-close::before {
   transform: translateY(-50%) rotate(45deg);
 }
 .c-btn-close::after {
   transform: translateY(-50%) rotate(-45deg);
+}
+.c-btn-close:hover::before, .c-btn-close:hover::after {
+  background-color: #f3cd01;
+}
+.c-btn-close:active::before, .c-btn-close:active::after {
+  background-color: #f3cd01;
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .c-workswrap {
