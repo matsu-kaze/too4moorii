@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="../../common/js/includeHead.js"></script>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.title = "作品詳細|チラシ・カタログ制作実務";
+      });
+    </script>
+  </head>
+  <body id="l-works">
+    <header id="header-placeholder"></header>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("header .l-worksh1").textContent =
+          "チラシ・カタログ制作実務";
+      });
+    </script>
+    <aside id="aside-placeholder"></aside>
+    <script src="../../common/js/includeAside.js"></script>
+    <script>
+      const liItems = [
+        "グラフィックデザイン",
+        "Photoshop",
+        "Illustrator",
+        "Indesign",
+        "Acrobat Pro"
+      ];
+    </script>
+    <section id="works-detail" class="l-workshero c-inner">
+      <div class="l-workshero-image">
+        <img
+          src="/common/img/graphic-1stv.jpg"
+          alt="チラシ・カタログ制作実務のファーストビュー画面"
+        />
+      </div>
+      <p>
+        映像音響機器メーカーで5年間、印刷物の制作業務に携わりました。A4サイズの製品チラシから350Pを超える総合カタログ、壁面カッティングシートのデザイン等幅広い業務を行いました。
+      </p>
+    </section>
+    <section class="l-worksfeatures c-inner">
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/graphic-leaflet.jpg"
+          alt="チラシの制作"
+        />
+      </div>
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/graphic-catalogue.jpg"
+          alt="カタログの制作"
+        />
+      </div>
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/graphic-expo.jpg"
+          alt="展示会に関する印刷物"
+        />
+      </div>
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/graphic-other.jpg"
+          alt="その他の印刷物"
+        />
+      </div>
+    </section>
+    <footer id="footer-placeholder"></footer>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("footer .l-works-nav a").href =
+          "/too4moorii/works/sukimaspace/";
+      });
+    </script>
+  </body>
+</html>

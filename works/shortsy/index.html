@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="../../common/js/includeHead.js"></script>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.title = "作品詳細|ショートドラマ試作場";
+      });
+    </script>
+  </head>
+  <body id="l-works">
+    <header id="header-placeholder"></header>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("header .l-worksh1").textContent =
+          "ショートドラマ試作場";
+      });
+    </script>
+    <aside id="aside-placeholder"></aside>
+    <script src="../../common/js/includeAside.js"></script>
+    <script>
+      const liItems = ["Web", "WP", "ビジュアル"];
+    </script>
+    <section id="works-detail" class="l-workshero c-inner">
+      <div class="l-workshero-image">
+        <div class="l-workshero-link">
+          <a href="https://shortscript-yard.x0.com/" target="_blank" rel="noopener" class="l-workshero-a"
+            >https://shortscript-yard.x0.com/</a>
+        </div>
+        <!--<img src="/too4moorii/common/img/sukima-1stv.jpg" alt="ショートドラマ試作場のファーストビュー画面"/>-->
+        <img src="/common/img/shortsy-1stv.jpg" alt="ショートドラマ試作場のファーストビュー画面"/>
+      </div>
+      <p>
+        ラジオドラマ、映像ドラマ、朗読、紙芝居などの「ショートドラマ」を制作するYoutubeチャンネル「ショートドラマ試作場」のWEBサイト。テーマは「ニュートラル」です。
+      </p>
+    </section>
+    <section class="c-workswrap c-inner">
+      <article class="l-worksissue c-inner">
+        <dl>
+          <dt>CLIENTの課題</dt>
+          <dd>
+            <ul>
+              <li>制作したシナリオの公開場所を作りたい</li>
+              <li>学生やドラマ制作に興味を持った人の助けになりたい</li>
+              <li>ドラマ制作において、シナリオ制作が最初の壁になることが多い。当グループのシナリオを使用することで誰でもドラマ制作に挑戦できるようにしたい</li>
+            </ul>
+          </dd>
+          <dt>WEBの役割</dt>
+          <dd>
+            <ul>
+              <li>シナリオ紹介</li>
+              <li>シナリオダウンロード</li>
+            </ul>
+          </dd>
+        </dl>
+      </article>
+      <article class="l-worksinfo c-inner">
+        <dl>
+          <dt>TYPE</dt>
+          <dd>Webサイト/リプレイス</dd>
+          <dt>TONE</dt>
+          <dd>
+            ベースカラー:#ffffff <br />
+            アソートカラー:#D9D9D9 <br />  
+          </dd>
+          <dt>KEYPHRASE</dt>
+          <dd>ニュートラル、僅かにコミカル</dd>
+        </dl>
+      </article>
+    </section>
+    <section class="l-worksfeatures c-inner">
+      <div class="c-works-imgs">
+        <!--<img src="/too4moorii/common/img/sukima-capture.jpg" alt="Webサイトのキャプチャー画像"/>-->
+        <video poster="/common/img/shortsy-capture.jpg" autoplay="" loop="" muted="" playsinline="">
+          <source src="/common/mov/shortsy-capture.mp4" type="video/mp4">
+        </video>
+        <div class="c-works-videotag">
+          <span>video</span>
+        </div>
+      </div>
+      <div class="c-works-imgs">
+        <!--<img src="/too4moorii/common/img/sukima-wire.jpg" alt="ワイヤーフレーム" />-->
+        <img src="/common/img/shortsy-mockup.jpg" alt="モックアップ" />
+      </div>
+      <div class="c-works-imgs">
+        <!--<img src="/too4moorii/common/img/sukima-tone.jpg" alt="Webサイトのトンマナ" />-->
+        <img src="/common/img/shortsy-plan.jpg" alt="メインビジュアル案" />
+      </div>
+    </section>
+    <footer id="footer-placeholder"></footer>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("footer .l-works-nav a").href =
+          //"/too4moorii/works/stamp/";
+          "/works/stamp/";
+      });
+    </script>
+  </body>
+</html>

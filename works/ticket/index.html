@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="../../common/js/includeHead.js"></script>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.title = "作品詳細|パーティ招待チケット";
+      });
+    </script>
+  </head>
+  <body id="l-works">
+    <header id="header-placeholder"></header>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("header .l-worksh1").textContent =
+          "パーティ招待チケット";
+      });
+    </script>
+    <aside id="aside-placeholder"></aside>
+    <script src="../../common/js/includeAside.js"></script>
+    <script>
+      const liItems = [
+        "グラフィックデザイン",
+        "Illustrator"
+      ];
+    </script>
+    <section id="works-detail" class="l-workshero c-inner">
+      <div class="l-workshero-image">
+        <img
+          src="/common/img/ticket-1stv.jpg"
+          alt="パーティ招待チケットのファーストビュー画面"
+        />
+      </div>
+    </section>
+    <section class="c-workswrap c-inner">
+      <article class="l-worksissue c-inner">
+        <p>
+          友人の結婚式2次会用に制作した招待チケットです。新郎新婦の仲の良さとコミュニティ内における人柄が伝わることを意識しました。「当日会話のきっかけになる」「持ち帰りたくなる」役割を持たせることにも努めました。
+        </p>
+      </article>
+      <article class="l-worksinfo c-inner">
+        <dl>
+          <dt>TONE</dt>
+          <dd>高明度&middot;高〜中彩度のオレンジ&middot;シアン系、トーンイントーン</dd>
+          <dt>KEYPHRASE</dt>
+          <dd>ナチュラル、清潔、モダン</dd>
+        </dl>
+      </article>
+    </section>
+    <section class="l-worksfeatures c-inner">
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/ticket-designa.jpg"
+          alt="デザインA"
+        />
+      </div>
+      <div class="c-works-imgs">
+        <img
+          src="/common/img/ticket-designb.jpg"
+          alt="デザインB"
+        />
+      </div>
+    </section>
+    <footer id="footer-placeholder"></footer>
+    <script>
+      document.addEventListener("headLoaded", function () {
+        document.querySelector("footer .l-works-nav a").href =
+          "/too4moorii/works/sukimaspace/";
+      });
+    </script>
+  </body>
+</html>
