@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(40px);
@@ -9,6 +10,50 @@
   transform: translateY(0);
 }
 
+/* ローディング画面のスタイル */
+.f-no-scroll {
+  overflow: hidden;
+}
+
+.f-content {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+#f-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #262626;
+}
+
+#f-loading2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f9;
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+  animation: fadeout 2s ease-out forwards;
+}
+
+/* アニメーション定義 */
+@keyframes fadeout {
+  0% {
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: circle(150% at 50% 50%);
+            clip-path: circle(150% at 50% 50%);
+    opacity: 1;
+  }
+}
 html {
   font-size: 14px;
 }

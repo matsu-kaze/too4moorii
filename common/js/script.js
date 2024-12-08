@@ -12,4 +12,19 @@ window.addEventListener("scroll", function () {
   });
 });
 
+window.addEventListener('load', () => {
+  const loadingScreen = document.getElementById('f-loading');
+  const loadingScreen2 = document.getElementById('f-loading2');
+  const content = document.querySelector('.f-content');
+
+  // アニメーション終了後にローディング画面を非表示
+  setTimeout(() => {
+    loadingScreen.style.display = 'none'; // ローディング画面を削除
+    loadingScreen2.style.display = 'none';
+    content.style.opacity = '1'; // コンテンツをフェードイン
+    document.body.classList.remove('f-no-scroll');
+  }, 2000); // アニメーション時間に合わせる
+});
+
+
 
