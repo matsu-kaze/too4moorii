@@ -6,30 +6,115 @@ body {
 }
 
 #l-home {
-  header {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: v.$black;
-    h1 {
-      text-align: center;
-      color: v.$white;
-      + div {
-        > div {
-          background-color: violet;
-        }
-      }
-    }
-  }
   section {
     text-align: center;
   }
   footer {
     text-align: center;
   }
+}
+
+#l-topheader{
+  position:relative;
+  display: grid;
+  grid-template-rows:1fr;
+  grid-template-columns:1fr 60dvw 1fr;
+  height: 100dvh;
+  &::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F9;
+    z-index: -10;
+  }
+
+  /* 左側のブロック */
+  .l-block-side {
+    background-color: #bb2855;
+  }
+
+  /* 中央のブロック */
+  .l-block-center {
+    display: grid;
+    grid-template: 
+      "left info title top top" 30%
+      "left info title right1 right2" 70%/
+      40% 4% 1fr 2% 41%
+      ;
+    position: relative;
+  }
+
+  .l-letter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .l-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .l-circle {
+    position:relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: #BB2855;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+  }
+  .l-circle::before{
+    content:"";
+    position:absolute;
+    width: 50px;
+    height: 1rem;
+    transform:translate(50%);
+    background-color: #f5c6d2;
+    z-index:-1;
+  }
+
+  /* 中央の中のブロック */
+  .l-block-left{
+    grid-area:left;
+  }
+
+  .l-block-info{
+    grid-area:info;
+  }
+
+  .l-block-title {
+    grid-area:title;
+    margin:auto;
+  }
+
+  .l-block-right1 {
+    grid-area:right1;
+    background-color: #FFD6E4;
+  }
+
+  .l-block-right2 {
+    grid-area:right2;
+    background-color: #C7728B;
+  }
+
+  .l-block-top{
+    grid-area:top;
+    background-color: #FFD6E4;
+  }
 
 }
+
+
 
 .l-profile{
   display: flex;

@@ -56,6 +56,7 @@
 }
 html {
   font-size: 14px;
+  font-family: "Josefin Sans", "arial", "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 h2 {
@@ -81,6 +82,22 @@ p {
 .l-works-nav a {
   color: inherit;
   text-decoration: none;
+}
+
+.f-vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-size: 1.2rem;
+  color: #f3cd01;
+}
+
+.f-vertical-name {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 1rem 0 0 2%;
 }
 
 :where(*) {
@@ -192,25 +209,95 @@ body {
   background-color: #f4f4f9;
 }
 
-#l-home header {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #262626;
-}
-#l-home header h1 {
-  text-align: center;
-  color: #f4f4f9;
-}
-#l-home header h1 + div > div {
-  background-color: violet;
-}
 #l-home section {
   text-align: center;
 }
 #l-home footer {
   text-align: center;
+}
+
+#l-topheader {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 60dvw 1fr;
+  height: 100dvh;
+  /* 左側のブロック */
+  /* 中央のブロック */
+  /* 中央の中のブロック */
+}
+#l-topheader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F9;
+  z-index: -10;
+}
+#l-topheader .l-block-side {
+  background-color: #bb2855;
+}
+#l-topheader .l-block-center {
+  display: grid;
+  grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 2% 41%;
+  position: relative;
+}
+#l-topheader .l-letter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#l-topheader .l-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#l-topheader .l-circle {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: #BB2855;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+#l-topheader .l-circle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1rem;
+  transform: translate(50%);
+  background-color: #f5c6d2;
+  z-index: -1;
+}
+#l-topheader .l-block-left {
+  grid-area: left;
+}
+#l-topheader .l-block-info {
+  grid-area: info;
+}
+#l-topheader .l-block-title {
+  grid-area: title;
+  margin: auto;
+}
+#l-topheader .l-block-right1 {
+  grid-area: right1;
+  background-color: #FFD6E4;
+}
+#l-topheader .l-block-right2 {
+  grid-area: right2;
+  background-color: #C7728B;
+}
+#l-topheader .l-block-top {
+  grid-area: top;
+  background-color: #FFD6E4;
 }
 
 .l-profile {
@@ -447,7 +534,7 @@ h2 {
   margin-bottom: 0.83rem;
 }
 
-#l-home section {
+#l-home > section {
   padding: 60px 0;
 }
 #l-home footer {
