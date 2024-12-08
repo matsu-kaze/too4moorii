@@ -97,7 +97,7 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
-  margin: 1rem 0 0 2%;
+  margin: 1rem 0 0 3%;
 }
 
 :where(*) {
@@ -241,7 +241,7 @@ body {
 }
 #l-topheader .l-block-center {
   display: grid;
-  grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 2% 41%;
+  grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 3% 30%;
   position: relative;
 }
 #l-topheader .l-letter-group {
@@ -258,7 +258,7 @@ body {
   position: relative;
   width: 3rem;
   height: 3rem;
-  background-color: #BB2855;
+  background-color: #bb2855;
   color: white;
   font-weight: bold;
   font-size: 2rem;
@@ -271,7 +271,7 @@ body {
 #l-topheader .l-circle::before {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 40dvw;
   height: 1rem;
   transform: translate(50%);
   background-color: #f5c6d2;

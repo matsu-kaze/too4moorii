@@ -33,7 +33,7 @@ body {
 
   /* 左側のブロック */
   .l-block-side {
-    background-color: #bb2855;
+    background-color: v.$assort;
   }
 
   /* 中央のブロック */
@@ -42,7 +42,7 @@ body {
     grid-template: 
       "left info title top top" 30%
       "left info title right1 right2" 70%/
-      40% 4% 1fr 2% 41%
+      40% 4% 1fr 3% 30%
       ;
     position: relative;
   }
@@ -63,7 +63,7 @@ body {
     position:relative;
     width: 3rem;
     height: 3rem;
-    background-color: #BB2855;
+    background-color: v.$assort;
     color: white;
     font-weight: bold;
     font-size: 2rem;
@@ -76,7 +76,7 @@ body {
   .l-circle::before{
     content:"";
     position:absolute;
-    width: 50px;
+    width: 40dvw;
     height: 1rem;
     transform:translate(50%);
     background-color: #f5c6d2;
