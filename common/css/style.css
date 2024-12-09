@@ -205,6 +205,11 @@ meter {
   box-sizing: border-box;
 }
 
+#l-home a {
+  color: initial;
+  text-decoration: none;
+}
+
 body {
   background-color: #f4f4f9;
 }
@@ -214,6 +219,15 @@ body {
 }
 #l-home footer {
   text-align: center;
+}
+#l-home a {
+  transition: all 0.5s ease-out;
+}
+#l-home a:hover {
+  opacity: 0.6;
+}
+#l-home a:hover img {
+  border-radius: 0;
 }
 
 #l-topheader {
@@ -233,7 +247,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #F4F4F9;
+  background-color: #f4f4f9;
   z-index: -10;
 }
 #l-topheader .l-block-side {
@@ -289,15 +303,15 @@ body {
 }
 #l-topheader .l-block-right1 {
   grid-area: right1;
-  background-color: #FFD6E4;
+  background-color: #ffd6e4;
 }
 #l-topheader .l-block-right2 {
   grid-area: right2;
-  background-color: #C7728B;
+  background-color: #c7728b;
 }
 #l-topheader .l-block-top {
   grid-area: top;
-  background-color: #FFD6E4;
+  background-color: #ffd6e4;
 }
 
 .l-profile {
@@ -339,6 +353,7 @@ body {
 .l-gallery .l-gallery-item img {
   min-width: 100%;
   border-radius: 8px;
+  transition: all 0.5s ease-out;
 }
 
 #l-topfooter ul {
