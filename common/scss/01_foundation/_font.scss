@@ -10,6 +10,10 @@ h2 {
 
 p {
   font-size: 1rem;
+  font-family: 'Zen Kaku Gothic Antique', '游ゴシック' ,'Yu Gothic', sans-serif;
+  &.josefin{
+    font-family: 'Josefin Sans','arial', 'Zen Kaku Gothic Antique', '游ゴシック' ,'Yu Gothic', sans-serif;
+  }
 }
 
 .l-workstag {

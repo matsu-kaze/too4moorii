@@ -65,6 +65,10 @@ h2 {
 
 p {
   font-size: 1rem;
+  font-family: "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", sans-serif;
+}
+p.josefin {
+  font-family: "Josefin Sans", "arial", "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .l-workstag {
@@ -278,13 +282,13 @@ body {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 50%;
   margin: 5px 0;
 }
 #l-topheader .l-circle::before {
   content: "";
   position: absolute;
+  top: 1rem;
   width: 40dvw;
   height: 1rem;
   transform: translate(50%);
@@ -418,6 +422,9 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+}
+#l-works .l-workstag > ul > li {
+  align-items: baseline;
 }
 #l-works .l-workshero-link {
   text-align: left;
