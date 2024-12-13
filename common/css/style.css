@@ -71,6 +71,18 @@ p.josefin {
   font-family: "Josefin Sans", "arial", "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+.zen-kaku-gothic-antique-regular {
+  font-family: "Zen Kaku Gothic Antique", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-antique-bold {
+  font-family: "Zen Kaku Gothic Antique", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .l-workstag {
   font-weight: bold;
 }
