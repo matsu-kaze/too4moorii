@@ -422,8 +422,6 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
-}
-#l-works .l-workstag > ul > li {
   align-items: baseline;
 }
 #l-works .l-workshero-link {
