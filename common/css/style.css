@@ -440,6 +440,7 @@ body {
 }
 #l-works header .l-worksh1 {
   width: 75%;
+  word-break: keep-all;
 }
 #l-works .l-workstag > ul {
   display: flex;
