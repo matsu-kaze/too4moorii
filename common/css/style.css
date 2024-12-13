@@ -393,10 +393,12 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 1.5rem;
+  justify-content: space-evenly;
 }
 @media (min-width:768px) {
   .l-button-sns {
     gap: 2rem;
+    justify-content: space-evenly;
   }
 }
 @media (min-width:1280px) {
@@ -405,7 +407,17 @@ body {
   }
 }
 .l-button-sns > li {
-  width: 100px;
+  width: 48px;
+}
+@media (min-width:768px) {
+  .l-button-sns > li {
+    width: 48px;
+  }
+}
+@media (min-width:1280px) {
+  .l-button-sns > li {
+    width: 100px;
+  }
 }
 
 #l-works .l-workshero-image img,

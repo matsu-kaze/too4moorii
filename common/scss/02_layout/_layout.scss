@@ -180,14 +180,22 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 1.5rem;
+  justify-content: space-evenly;
   @include v.mq(tab) {
     gap: 2rem;
+    justify-content: space-evenly;
   }
   @include v.mq(pc) {
     gap: 2rem;
   }
   > li {
-    width: 100px;
+    width: 48px;
+    @include v.mq(tab) {
+      width: 48px;
+    }
+    @include v.mq(pc){
+      width: 100px;
+    }
   }
 }
 
