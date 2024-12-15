@@ -34,22 +34,13 @@ const textElements = document.querySelectorAll(".l-circle");
 
 // 画像拡大
 function expandImage() {
-  console.log("expandImage called!"); // 関数が呼び出されているか確認
-  console.log("Clicked Element:", this); // `this`がクリックされた要素か確認
-
   const overlay = document.getElementById("f-overlay");
-  console.log("Overlay element:", overlay); // `#f-overlay`が取得できているか確認
-
   const overlayImage = document.getElementById("f-overlayImage");
   const fullImageSrc = this.getAttribute("data-full");
-  console.log("Full Image Source:", fullImageSrc); // `data-full`属性が正しいか確認
-
   overlayImage.src = fullImageSrc;
   overlay.style.display = "flex";
 }
 function closeOverlay() {
-  console.log("closeOverlay called!"); // 関数が呼び出されているか確認
-
   const overlay = document.getElementById("f-overlay");
   const overlayImage = document.getElementById("f-overlayImage");
   overlay.style.display = "none";
@@ -69,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelectorAll(".f-expandImage").forEach(function (element) {
-    console.log("Expand Image Element:", element); // 各`.f-expandImage`要素が取得できているか確認
     element.addEventListener("click", expandImage);
   });
   document.querySelector("#f-overlay").addEventListener("click", closeOverlay);
