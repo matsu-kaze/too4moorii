@@ -18,11 +18,14 @@ window.addEventListener("load", () => {
   const content = document.querySelector(".f-content");
 
   // アニメーション終了後にローディング画面を非表示
+
   setTimeout(() => {
-    loadingScreen.style.display = "none";
-    loadingScreen2.style.display = "none";
-    content.style.opacity = "1"; // コンテンツをフェードイン
-    document.body.classList.remove("f-no-scroll");
+    if (loadingScreen && loadingScreen2) {
+      loadingScreen.style.display = "none";
+      loadingScreen2.style.display = "none";
+      content.style.opacity = "1"; // コンテンツをフェードイン
+      document.body.classList.remove("f-no-scroll");
+    }
   }, 2000); // アニメーション時間に合わせる
 });
 
