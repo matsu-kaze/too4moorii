@@ -12,17 +12,14 @@
     <header id="header-placeholder"></header>
     <script>
       document.addEventListener("headLoaded", function () {
-        document.querySelector("header .l-worksh1").innerHTML  =
-          "パーティ<wbr>招待<wbr>チケット";
+        document.querySelector("header .l-worksh1").textContent =
+          "パーティ招待チケット";
       });
     </script>
     <aside id="aside-placeholder"></aside>
     <script src="../../common/js/includeAside.js"></script>
     <script>
-      const liItems = [
-        "グラフィックデザイン",
-        "Illustrator"
-      ];
+      const liItems = ["グラフィックデザイン", "Illustrator"];
     </script>
     <section id="works-detail" class="l-workshero c-inner">
       <div class="l-workshero-image">
@@ -41,7 +38,9 @@
       <article class="l-worksinfo c-inner">
         <dl>
           <dt>TONE</dt>
-          <dd>高明度&middot;高〜中彩度のオレンジ&middot;シアン系、トーンイントーン</dd>
+          <dd>
+            高明度&middot;高〜中彩度のオレンジ&middot;シアン系、トーンイントーン
+          </dd>
           <dt>KEYPHRASE</dt>
           <dd>ナチュラル、清潔、モダン</dd>
         </dl>
@@ -50,14 +49,18 @@
     <section class="l-worksfeatures c-inner">
       <div class="c-works-imgs">
         <img
+          class="f-expandImage"
           src="/too4moorii/common/img/ticket-designa.jpg"
           alt="デザインA"
+          data-full="/too4moorii/common/img/ticket-designa.jpg"
         />
       </div>
       <div class="c-works-imgs">
         <img
+          class="f-expandImage"
           src="/too4moorii/common/img/ticket-designb.jpg"
           alt="デザインB"
+          data-full="/too4moorii/common/img/ticket-designb.jpg"
         />
       </div>
     </section>
@@ -65,7 +68,7 @@
     <script>
       document.addEventListener("headLoaded", function () {
         document.querySelector("footer .l-works-nav a").href =
-          "/too4moorii/works/graphic/";
+          "/too4moorii/works/sukimaspace/";
       });
     </script>
   </body>

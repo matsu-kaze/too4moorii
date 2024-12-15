@@ -12,7 +12,7 @@
     <header id="header-placeholder"></header>
     <script>
       document.addEventListener("headLoaded", function () {
-        document.querySelector("header .l-worksh1").innerHTML  =
+        document.querySelector("header .l-worksh1").innerHTML =
           "柴又<wbr>スタンプ<wbr>ラリー";
       });
     </script>
@@ -91,8 +91,17 @@
     </section>
     <section class="l-worksfeatures c-inner">
       <div class="c-works-imgs l-works-grid">
-        <video poster="/too4moorii/common/img/stamp-capture.jpg" autoplay="" loop="" muted="" playsinline="">
-          <source src="/too4moorii/common/mov/stamp-capture.mp4" type="video/mp4">
+        <video
+          poster="/too4moorii/common/img/stamp-capture.jpg"
+          autoplay=""
+          loop=""
+          muted=""
+          playsinline=""
+        >
+          <source
+            src="/too4moorii/common/mov/stamp-capture.mp4"
+            type="video/mp4"
+          />
         </video>
         <div class="c-works-videotag">
           <span>video</span>
@@ -100,12 +109,19 @@
       </div>
       <div class="c-works-imgs">
         <img
+          class="f-expandImage"
           src="/too4moorii/common/img/stamp-print-qr.jpg"
           alt="各所に設置されたQRコードを読み取るとスタンプを獲得"
+          data-full="/too4moorii/common/img/stamp-print-qr.jpg"
         />
       </div>
       <div class="c-works-imgs">
-        <img src="/too4moorii/common/img/stamp-tone.jpg" alt="Webサイトのトンマナ" />
+        <img
+          class="f-expandImage"
+          src="/too4moorii/common/img/stamp-tone.jpg"
+          alt="Webサイトのトンマナ"
+          data-full="/too4moorii/common/img/stamp-tone.jpg"
+        />
       </div>
     </section>
     <footer id="footer-placeholder"></footer>

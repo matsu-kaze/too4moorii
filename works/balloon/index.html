@@ -12,22 +12,21 @@
     <header id="header-placeholder"></header>
     <script>
       document.addEventListener("headLoaded", function () {
-        document.querySelector("header .l-worksh1").innerHTML  =
+        document.querySelector("header .l-worksh1").innerHTML =
           "パーティ<wbr>バルーンの<wbr>デザイン";
       });
     </script>
     <aside id="aside-placeholder"></aside>
     <script src="../../common/js/includeAside.js"></script>
     <script>
-      const liItems = [
-        "グラフィックデザイン",
-        "Illustrator"
-      ];
+      const liItems = ["グラフィックデザイン", "Illustrator"];
     </script>
     <section id="works-detail" class="l-workshero c-inner">
       <div class="l-workshero-image">
-        <img src="/too4moorii/common/img/balloon-1stv.jpg" alt="パーティバルーンのデザインのファーストビュー画面"/>
-        <!--<img src="/common/img/balloon-1stv.jpg" alt="パーティバルーンのデザインのファーストビュー画面"/>-->
+        <img
+          src="/too4moorii/common/img/balloon-1stv.jpg"
+          alt="パーティバルーンのデザインのファーストビュー画面"
+        />
       </div>
     </section>
     <section class="c-workswrap c-inner">
@@ -48,14 +47,18 @@
     <section class="l-worksfeatures c-inner">
       <div class="c-works-imgs">
         <img
+          class="f-expandImage"
           src="/too4moorii/common/img/balloon-plan.jpg"
           alt="デザイン案と入稿時の指示"
+          data-full="/too4moorii/common/img/balloon-plan.jpg"
         />
       </div>
       <div class="c-works-imgs">
         <img
+          class="f-expandImage"
           src="/too4moorii/common/img/balloon-photo.jpg"
           alt="実際の写真"
+          data-full="/too4moorii/common/img/balloon-photo.jpg"
         />
       </div>
     </section>

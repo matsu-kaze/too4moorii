@@ -58,8 +58,6 @@ function closeOverlay() {
 
 // 実行
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("JavaScriptファイルが読み込まれました");
-
   textElements.forEach((textElement) => {
     const computedFont = window.getComputedStyle(textElement).fontFamily;
 
