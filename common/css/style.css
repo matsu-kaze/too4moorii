@@ -54,6 +54,31 @@
     opacity: 1;
   }
 }
+/* 画像拡大のスタイル */
+.f-expandImage {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.f-works-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.f-works-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 html {
   font-size: 14px;
   font-family: "Josefin Sans", "arial", "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", sans-serif;

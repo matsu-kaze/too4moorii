@@ -13,10 +13,11 @@
     <script>
       document.addEventListener("headLoaded", function () {
         document.querySelector("header .l-worksh1").innerHTML =
-        "すきま<wbr>スペース<wbr>不動産";
+          "すきま<wbr>スペース<wbr>不動産";
       });
     </script>
     <aside id="aside-placeholder"></aside>
+    <script src="/common/js/script.js" defer></script>
     <script src="../../common/js/includeAside.js"></script>
     <script>
       const liItems = ["架空", "Web", "HTML/CSS", "PHP", "ロゴ", "UI"];
@@ -24,10 +25,18 @@
     <section id="works-detail" class="l-workshero c-inner">
       <div class="l-workshero-image">
         <div class="l-workshero-link">
-          <a href="https://works-tttt.o0o0.jp/sukimaspace/" target="_blank" rel="noopener" class="l-workshero-a"
-            >https://works-tttt.o0o0.jp/sukimaspace/</a>
+          <a
+            href="https://works-tttt.o0o0.jp/sukimaspace/"
+            target="_blank"
+            rel="noopener"
+            class="l-workshero-a"
+            >https://works-tttt.o0o0.jp/sukimaspace/</a
+          >
         </div>
-        <img src="/too4moorii/common/img/sukima-1stv.jpg" alt="すきまスペース不動産のファーストビュー画面"/>
+        <img
+          src="/too4moorii/common/img/sukima-1stv.jpg"
+          alt="すきまスペース不動産のファーストビュー画面"
+        />
         <!--<img src="/common/img/sukima-1stv.jpg" alt="すきまスペース不動産のファーストビュー画面"/>-->
       </div>
       <p>
@@ -81,19 +90,36 @@
     <section class="l-worksfeatures c-inner">
       <div class="c-works-imgs l-works-grid">
         <!--<img src="/too4moorii/common/img/sukima-capture.jpg" alt="Webサイトのキャプチャー画像"/>-->
-        <video poster="/too4moorii/common/img/sukima-capture.jpg" autoplay="" loop="" muted="" playsinline="">
-          <source src="/too4moorii/common/mov/sukima-capture.mp4" type="video/mp4">
+        <video
+          poster="/too4moorii/common/img/sukima-capture.jpg"
+          autoplay=""
+          loop=""
+          muted=""
+          playsinline=""
+        >
+          <source
+            src="/too4moorii/common/mov/sukima-capture.mp4"
+            type="video/mp4"
+          />
         </video>
         <div class="c-works-videotag">
           <span>video</span>
         </div>
       </div>
       <div class="c-works-imgs">
-        <img src="/too4moorii/common/img/sukima-wire.jpg" alt="ワイヤーフレーム" />
+        <img
+          class="f-expandImage"
+          src="/too4moorii/common/img/sukima-wire.jpg"
+          alt="ワイヤーフレーム"
+          data-full="/common/img/sukima-wire.jpg"
+        />
         <!--<img src="/common/img/sukima-wire.jpg" alt="ワイヤーフレーム" />-->
       </div>
       <div class="c-works-imgs">
-        <img src="/too4moorii/common/img/sukima-tone.jpg" alt="Webサイトのトンマナ" />
+        <img
+          src="/too4moorii/common/img/sukima-tone.jpg"
+          alt="Webサイトのトンマナ"
+        />
         <!--<img src="/common/img/sukima-tone.jpg" alt="Webサイトのトンマナ" />-->
       </div>
       <div class="c-works-imgs">
@@ -106,7 +132,7 @@
       document.addEventListener("headLoaded", function () {
         document.querySelector("footer .l-works-nav a").href =
           "/too4moorii/works/stamp/";
-          //"/works/stamp/";
+        //"/works/stamp/";
       });
     </script>
   </body>
