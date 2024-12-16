@@ -451,16 +451,31 @@ body {
 }
 #l-works .l-worksfeatures {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
-@media (max-width:767px) {
+@media (min-width:768px) {
   #l-works .l-worksfeatures {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:1280px) {
+  #l-works .l-worksfeatures {
+    grid-template-columns: 1fr 1fr;
   }
 }
 #l-works .l-works-grid {
-  grid-column: 1/3;
+  grid-column: auto;
+}
+@media (min-width:768px) {
+  #l-works .l-works-grid {
+    grid-column: 1/3;
+  }
+}
+@media (min-width:1280px) {
+  #l-works .l-works-grid {
+    grid-column: 1/3;
+  }
 }
 #l-works header > div {
   display: flex;

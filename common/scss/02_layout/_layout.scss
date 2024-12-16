@@ -208,14 +208,23 @@ body {
   }
   .l-worksfeatures {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
-    @include v.mq(sp) {
-      grid-template-columns: 1fr;
+    @include v.mq(tab) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include v.mq(pc) {
+      grid-template-columns: 1fr 1fr;
     }
   }
   .l-works-grid {
-    grid-column: 1/3;
+    grid-column: auto;
+    @include v.mq(tab) {
+      grid-column: 1/3;
+    }
+    @include v.mq(pc) {
+      grid-column: 1/3;
+    }
   }
   header {
     > div {
