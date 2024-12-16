@@ -479,6 +479,12 @@ body {
 }
 #l-works .l-workshero-link {
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#l-works .l-workshero-link > svg {
+  width: 1.5rem;
 }
 #l-works .l-worksissue dl dt {
   border-bottom: solid 0.5px;

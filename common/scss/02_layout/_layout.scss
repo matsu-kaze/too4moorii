@@ -193,7 +193,7 @@ body {
     @include v.mq(tab) {
       width: 48px;
     }
-    @include v.mq(pc){
+    @include v.mq(pc) {
       width: 100px;
     }
   }
@@ -214,8 +214,8 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  .l-works-grid{
-    grid-column:1/3;
+  .l-works-grid {
+    grid-column: 1/3;
   }
   header {
     > div {
@@ -224,7 +224,7 @@ body {
     }
     .l-worksh1 {
       width: 75%;
-      word-break: keep-all; 
+      word-break: keep-all;
     }
   }
   .l-workstag {
@@ -238,6 +238,12 @@ body {
   }
   .l-workshero-link {
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    > svg {
+      width: 1.5rem;
+    }
   }
 
   .l-worksissue {
