@@ -16,9 +16,9 @@ window.addEventListener("load", () => {
   const loadingScreen = document.getElementById("f-loading");
   const loadingScreen2 = document.getElementById("f-loading2");
   const content = document.querySelector(".f-content");
+  let storage_data = sessionStorage.getItem('LOAD_ID');
 
   // アニメーション終了後にローディング画面を非表示
-
   setTimeout(() => {
     if (loadingScreen && loadingScreen2) {
       loadingScreen.style.display = "none";
@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
       content.style.opacity = "1"; // コンテンツをフェードイン
       document.body.classList.remove("f-no-scroll");
     }
-  }, 2000); // アニメーション時間に合わせる
+  }, storage_data ? 0 : 2000); // アニメーション時間に合わせる、2回目は省略
 });
 
 // fontによるボックスコンテンツのdescent値対応
