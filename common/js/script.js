@@ -27,6 +27,7 @@ window.addEventListener("load", () => {
       document.body.classList.remove("f-no-scroll");
     }
   }, storage_data ? 0 : 2000); // アニメーション時間に合わせる、2回目は省略
+  sessionStorage.setItem('LOAD_ID', 'shown');
 });
 
 // fontによるボックスコンテンツのdescent値対応
