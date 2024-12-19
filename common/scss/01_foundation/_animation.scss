@@ -38,6 +38,39 @@
   clip-path: circle(0% at 50% 50%);
   animation: fadeout 2s ease-out forwards;
 }
+.marquee-section {
+    overflow: hidden;
+    width: 100%; 
+    height:100dvh;
+    background-color: v.$grayLite;
+    color: v.$accent; 
+    padding: 10px 0;
+}
+
+.marquee-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.marquee {
+    display: flex;
+    flex-direction:column;
+    animation: marquee-left 13s infinite linear 0.5s both;
+    list-style: none;
+    padding: 0;
+    margin:auto;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    height: calc(100% / 5 + 10px);
+    font-size: 1rem;
+
+}
+    
+    
 /* アニメーション定義 */
 @keyframes fadeout {
   0% {
@@ -49,6 +82,14 @@
     opacity: 1;
   }
 }
+@keyframes marquee-left {
+    from {
+      transform: translateY(-100%);
+    }
+      to {
+      transform: translateY(0);
+    }
+    }
 
 /* 画像拡大のスタイル */
 .f-expandImage {
