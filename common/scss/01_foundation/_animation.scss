@@ -10,6 +10,10 @@
   transform: translateY(0);
 }
 
+.l-workshero-link {
+    transition: 0.5s ease-in;
+}
+
 /* ローディング画面のスタイル */
 .f-no-scroll {
   overflow: hidden;

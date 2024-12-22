@@ -232,6 +232,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transform: translateX(0);
     &:hover,&:active{
       transform: translateX(-3.5rem);
     }

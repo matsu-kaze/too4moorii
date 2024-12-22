@@ -10,6 +10,10 @@
   transform: translateY(0);
 }
 
+.l-workshero-link {
+  transition: 0.5s ease-in;
+}
+
 /* ローディング画面のスタイル */
 .f-no-scroll {
   overflow: hidden;
@@ -155,7 +159,7 @@ p.josefin {
   font-weight: bold;
 }
 
-.l-workshero a {
+.l-workshero-a {
   color: #f4f4f9;
   text-decoration: none;
 }
@@ -517,6 +521,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transform: translateX(0);
 }
 #l-works .l-workshero-link:hover, #l-works .l-workshero-link:active {
   transform: translateX(-3.5rem);
