@@ -285,7 +285,7 @@ body {
 }
 
 #l-none{
-  .l-none-container {
+  &.l-none-container {
     position: relative;
     width: 100dvw;
     height: 100dvh;

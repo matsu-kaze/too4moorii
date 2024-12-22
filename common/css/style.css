@@ -573,7 +573,7 @@ body {
   text-align: center;
 }
 
-#l-none .l-none-container {
+#l-none.l-none-container {
   position: relative;
   width: 100dvw;
   height: 100dvh;
