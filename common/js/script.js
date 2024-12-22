@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
 });
 
 // fontによるボックスコンテンツのdescent値対応
-const textElements = document.querySelectorAll(".l-circle");
+const textElements = document.querySelectorAll(".c-circle");
 
 // 画像拡大
 function expandImage() {

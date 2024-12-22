@@ -348,29 +348,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#l-topheader .l-circle {
-  position: relative;
-  width: 3rem;
-  height: 3rem;
-  background-color: #bb2855;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 5px 0;
-}
-#l-topheader .l-circle::before {
-  content: "";
-  position: absolute;
-  top: 1rem;
-  width: 40dvw;
-  height: 1rem;
-  transform: translate(50%);
-  background-color: #f5c6d2;
-  z-index: -1;
-}
 #l-topheader .l-block-left {
   grid-area: left;
 }
@@ -593,6 +570,31 @@ body {
   :where(.c-flex) {
     flex-direction: row;
   }
+}
+
+.c-circle {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: #bb2855;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+.c-circle::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  width: 40dvw;
+  height: 1rem;
+  transform: translate(50%);
+  background-color: #f5c6d2;
+  z-index: -1;
 }
 
 .c-btn-close {
