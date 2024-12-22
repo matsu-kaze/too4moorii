@@ -435,6 +435,9 @@ body {
   border-radius: 8px;
   transition: all 0.5s ease-out;
 }
+.l-gallery .l-gallery-item > div > p {
+  word-break: keep-all;
+}
 
 #l-topfooter ul {
   padding-inline-start: unset;
