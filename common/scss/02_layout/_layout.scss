@@ -231,7 +231,10 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
+    &:hover,&:active{
+      transform: translateX(-3.5rem);
+    }
     >div{
       align-items: center;
       > svg {
@@ -241,7 +244,7 @@ body {
     }
     .c-circle{
       &::before{
-        width: 5dwv;
+        width: 5dvw;
       }
     }
   }

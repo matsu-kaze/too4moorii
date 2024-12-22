@@ -516,7 +516,10 @@ body {
   text-align: left;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5rem;
+}
+#l-works .l-workshero-link:hover, #l-works .l-workshero-link:active {
+  transform: translateX(-3.5rem);
 }
 #l-works .l-workshero-link > div {
   align-items: center;
@@ -526,7 +529,7 @@ body {
   fill: #f4f4f9;
 }
 #l-works .l-workshero-link .c-circle::before {
-  width: 5dwv;
+  width: 5dvw;
 }
 #l-works .l-workshero-a {
   background-color: #bb2855;
