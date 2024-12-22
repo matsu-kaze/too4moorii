@@ -232,9 +232,22 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    > svg {
-      width: 1.5rem;
+    >div{
+      align-items: center;
+      > svg {
+        width: 1.5rem;
+        fill: v.$white;
+      }
     }
+    .c-circle{
+      &::before{
+        width: 5dwv;
+      }
+    }
+  }
+  .l-workshero-a{
+    background-color: #bb2855;
+    padding: 0.5rem;
   }
 
   .l-worksissue {

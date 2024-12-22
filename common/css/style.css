@@ -156,7 +156,8 @@ p.josefin {
 }
 
 .l-workshero a {
-  color: #aaa;
+  color: #f4f4f9;
+  text-decoration: none;
 }
 
 .l-works-nav a {
@@ -517,8 +518,19 @@ body {
   align-items: center;
   gap: 5px;
 }
-#l-works .l-workshero-link > svg {
+#l-works .l-workshero-link > div {
+  align-items: center;
+}
+#l-works .l-workshero-link > div > svg {
   width: 1.5rem;
+  fill: #f4f4f9;
+}
+#l-works .l-workshero-link .c-circle::before {
+  width: 5dwv;
+}
+#l-works .l-workshero-a {
+  background-color: #bb2855;
+  padding: 0.5rem;
 }
 #l-works .l-worksissue dl dt {
   border-bottom: solid 0.5px;
