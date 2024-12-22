@@ -185,6 +185,14 @@ p.josefin {
   margin: 1rem 0 0 3%;
 }
 
+.l-none-title {
+  color: #bb2855;
+}
+
+.l-none-message {
+  color: #262626;
+}
+
 :where(*) {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -559,10 +567,48 @@ body {
   transition: 0.3s;
 }
 #l-works .l-works-nav a:hover {
-  background-color: #ddd;
+  background-color: #eee;
 }
 #l-works footer {
   text-align: center;
+}
+
+#l-none .l-none-container {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: 66.67% 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+#l-none .l-none-leftwall,
+#l-none .l-none-rightwall {
+  background-color: #bb2855;
+}
+#l-none .l-none-leftwall {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.67%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 66.67%, 0% 100%);
+}
+#l-none .l-none-rightwall {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66.67%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66.67%);
+}
+#l-none .l-none-frontwall {
+  background-color: #f4f4f9;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#l-none .l-none-ground {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .c-inner {
