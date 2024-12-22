@@ -11,7 +11,7 @@
 }
 
 .l-workshero-link {
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
 }
 
 /* ローディング画面のスタイル */
@@ -159,7 +159,7 @@ p.josefin {
   font-weight: bold;
 }
 
-.l-workshero-a {
+.l-workshero-link {
   color: #f4f4f9;
   text-decoration: none;
 }
