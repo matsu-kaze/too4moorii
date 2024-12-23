@@ -28,6 +28,15 @@ p {
   font-style: normal;
 }
 
+.marquee-text {
+  font-size: 0.8rem;
+  @include v.mq(tab){
+    font-size: 1rem;
+  }
+  @include v.mq(pc){
+    font-size: 1rem;
+  }
+}
 
 .l-workstag {
   font-weight: bold;

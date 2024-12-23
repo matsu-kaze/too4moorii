@@ -73,7 +73,6 @@
   writing-mode: vertical-rl;
   text-orientation: sideways;
   height: calc(20% + 10px);
-  font-size: 1rem;
 }
 
 /* アニメーション定義 */
@@ -149,6 +148,20 @@ p.josefin {
   font-family: "Zen Kaku Gothic Antique", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.marquee-text {
+  font-size: 0.8rem;
+}
+@media (min-width:768px) {
+  .marquee-text {
+    font-size: 1rem;
+  }
+}
+@media (min-width:1280px) {
+  .marquee-text {
+    font-size: 1rem;
+  }
 }
 
 .l-workstag {
@@ -349,8 +362,18 @@ body {
 }
 #l-topheader .l-block-center {
   display: grid;
-  grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 3% 30%;
+  grid-template: "left info title top top" 30% "left info title right1 right2" 70%/35% 9% 1fr 3% 30%;
   position: relative;
+}
+@media (min-width:768px) {
+  #l-topheader .l-block-center {
+    grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 3% 30%;
+  }
+}
+@media (min-width:1280px) {
+  #l-topheader .l-block-center {
+    grid-template: "left info title top top" 30% "left info title right1 right2" 70%/40% 4% 1fr 3% 30%;
+  }
 }
 #l-topheader .l-letter-group {
   display: flex;

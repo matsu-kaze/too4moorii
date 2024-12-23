@@ -51,8 +51,20 @@ body {
     grid-template:
       "left info title top top" 30%
       "left info title right1 right2" 70%/
-      40% 4% 1fr 3% 30%;
+      35% 9% 1fr 3% 30%;
     position: relative;
+    @include v.mq(tab){
+      grid-template:
+      "left info title top top" 30%
+      "left info title right1 right2" 70%/
+      40% 4% 1fr 3% 30%;
+    }
+    @include v.mq(pc){
+      grid-template:
+      "left info title top top" 30%
+      "left info title right1 right2" 70%/
+      40% 4% 1fr 3% 30%;
+    }
   }
 
   .l-letter-group {
