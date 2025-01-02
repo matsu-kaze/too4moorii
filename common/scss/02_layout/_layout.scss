@@ -246,7 +246,9 @@ body {
     gap: 0.5rem;
     transform: translateX(0);
     &:hover,&:active{
-      transform: translateX(-3.5rem);
+      .c-cricle{
+        transform: translateX(-3.5rem);
+      }
     }
     >div{
       align-items: center;
@@ -257,7 +259,7 @@ body {
     }
     .c-circle{
       &::before{
-        width: 5dvw;
+        width: 20dvw;
       }
     }
   }

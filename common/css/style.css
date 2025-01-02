@@ -10,7 +10,7 @@
   transform: translateY(0);
 }
 
-.l-workshero-link {
+.l-workshero-link .c-circle {
   transition: 0.2s ease-in;
 }
 
@@ -555,7 +555,7 @@ body {
   gap: 0.5rem;
   transform: translateX(0);
 }
-#l-works .l-workshero-link:hover, #l-works .l-workshero-link:active {
+#l-works .l-workshero-link:hover .c-cricle, #l-works .l-workshero-link:active .c-cricle {
   transform: translateX(-3.5rem);
 }
 #l-works .l-workshero-link > div {
@@ -566,7 +566,7 @@ body {
   fill: #f4f4f9;
 }
 #l-works .l-workshero-link .c-circle::before {
-  width: 5dvw;
+  width: 20dvw;
 }
 #l-works .l-workshero-a {
   background-color: #bb2855;
