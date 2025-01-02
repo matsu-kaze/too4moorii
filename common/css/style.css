@@ -555,7 +555,7 @@ body {
   gap: 0.5rem;
   transform: translateX(0);
 }
-#l-works .l-workshero-link:hover .c-cricle, #l-works .l-workshero-link:active .c-cricle {
+#l-works .l-workshero-link:hover .c-circle, #l-works .l-workshero-link:active .c-circle {
   transform: translateX(-3.5rem);
 }
 #l-works .l-workshero-link > div {
