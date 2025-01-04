@@ -248,6 +248,7 @@ body {
     &:hover,&:active{
       .c-circle{
         transform: translateX(-3.5rem);
+        z-index: -1;
       }
     }
     >div{
@@ -258,7 +259,7 @@ body {
       }
     }
     .c-circle{
-      &::before{
+      &::after{
         width: 20dvw;
       }
     }
