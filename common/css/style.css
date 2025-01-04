@@ -566,6 +566,9 @@ body {
   width: 1.5rem;
   fill: #f4f4f9;
 }
+#l-works .l-workshero-link .c-circle {
+  z-index: -1;
+}
 #l-works .l-workshero-link .c-circle::after {
   width: 20dvw;
 }

@@ -259,6 +259,7 @@ body {
       }
     }
     .c-circle{
+      z-index: -1;
       &::after{
         width: 20dvw;
       }
