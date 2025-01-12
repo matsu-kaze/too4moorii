@@ -242,6 +242,7 @@ body {
   .l-workshero-link {
     text-align: left;
     display: flex;
+    width:fit-content;
     align-items: center;
     gap: 0.5rem;
     transform: translateX(0);
@@ -261,7 +262,7 @@ body {
     .c-circle{
       z-index: -1;
       &::after{
-        width: 20dvw;
+        width: 7rem;
       }
     }
   }

@@ -551,6 +551,8 @@ body {
 #l-works .l-workshero-link {
   text-align: left;
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
   gap: 0.5rem;
   transform: translateX(0);
@@ -570,7 +572,7 @@ body {
   z-index: -1;
 }
 #l-works .l-workshero-link .c-circle::after {
-  width: 20dvw;
+  width: 7rem;
 }
 #l-works .l-workshero-a {
   background-color: #bb2855;
