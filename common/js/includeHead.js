@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", async function () {
+
+
+async function loadHeader() {
   try {
     const headResponse = await fetch("/too4moorii/common/template/head-w.html");
     //const headResponse = await fetch("/common/template/head-w.html");
@@ -19,4 +21,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   } catch (error) {
     console.error("Error fetching head:", error);
   }
-});
+} 
+
+loadHeader();
