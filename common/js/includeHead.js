@@ -1,5 +1,4 @@
 
-
 async function loadHeader() {
   try {
     const headResponse = await fetch("/too4moorii/common/template/head-w.html");
